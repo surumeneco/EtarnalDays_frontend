@@ -1,1 +1,0 @@
-# EtarnalDays_frontend
