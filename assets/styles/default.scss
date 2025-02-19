@@ -3,30 +3,92 @@
     ---=---=---=---=---=---=---=---=---=---=---=---=---=---=---=---=---=---=---=---=---=---=---=---=---=--- */
 // 全要素
 * {
-  font-family: '';
+  font-family: "";
 }
 
 // ボディ
 body {
-  background-color: #3F3F3F;
-  color: #FFEBD8;
+  background-color: #3f3f3f;
+  color: #ffebd8;
+}
+
+// コンテンツ枠
+.contents {
+  &-container {
+    padding: 10px 20px !important;
+  }
+  &-block {
+    margin: 1em 0px;
+  }
+  &-box {
+    background-color: #373737;
+    border-radius: 10px;
+    margin: 0px 20px;
+    padding: 10px 20px;
+  }
 }
 
 // リンク色
 link,
 a {
   &:link {
-    color: #7FFFFF;
+    color: #7fffff;
   }
 
   &:visited {
-    color: #7F7FFF;
+    color: #7f7fff;
   }
 
   &:hover {
-    color: #00CFCF;
-    text-decoration: underline;
+    color: #00cfcf !important;
+    text-decoration: underline !important;
+  }
+
+  // 別タブで開く時のアイコン
+  &[target="_blank"] {
+    &:after {
+      font-family: bootstrap-icons;
+      content: "\F1C5"; /* box-arrow-up-right */
+      margin-left: 0.25rem;
+    }
   }
 }
+
+/*  -----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----
+      レイアウト系のスタイル
+    -----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----  */
+// ヘッダ
+header {
+  background-color: #2f2f1f;
+  border-top: #1f1f1f double 10px;
+  border-bottom: #1f1f1f double 10px;
+}
+
+// フッタ
+footer {
+  background-color: #1f1f1f;
+  border-top: #2f2f1f double 10px;
+  border-bottom: #2f2f1f double 10px;
+}
+.footer {
+  &-menu {
+    &-title {
+      font-size: 1.25em;
+    }
+
+    ul {
+      margin: 0px;
+      padding-left: 10px;
+    }
+    li {
+      list-style: none;
+    }
+    a {
+      color: #ffebd8;
+      text-decoration: none;
+    }
+  }
+}
+/*  -----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----  */
 
 /* ---=---=---=---=---=---=---=---=---=---=---=---=---=---=---=---=---=---=---=---=---=---=---=---=---=--- */

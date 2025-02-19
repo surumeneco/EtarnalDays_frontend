@@ -1,8 +1,6 @@
 <template>
-  <div data-bs-theme="dark">
-    <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
+  <div class="contents-container">
+    <slot />
   </div>
 </template>
 
